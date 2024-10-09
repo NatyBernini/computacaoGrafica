@@ -6,9 +6,9 @@ from core.input import Input
 class MyApplication(Base):
     def initialize(self):
         # Inicializa o processamento de entrada
-        # self.input = Input()
+        #self.input = Input()
         self.input.update()
-        print("Janela Fechada")
+        print("Janela fechada!")
         if self.input.quit:
             self.running = False
 

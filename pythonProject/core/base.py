@@ -1,6 +1,5 @@
 import pygame
 import sys
-import core
 from core.input import Input
 
 
@@ -9,8 +8,8 @@ class Base(object):
         # Inicializar todos os módulos do Pygame
         pygame.init()
 
-        # Definir as configurações de renderização
         displayFlags = pygame.DOUBLEBUF | pygame.OPENGL
+        # Definir as configurações de renderização
 
         # Inicializar buffers para realizar antialiasing (suavização de serrilhados)
         pygame.display.gl_set_attribute(pygame.GL_MULTISAMPLEBUFFERS, 1)
@@ -33,7 +32,7 @@ class Base(object):
 
         # Gerenciar dados e operações relacionadas ao tempo
         self.clock = pygame.time.Clock()
-
+        # gerenciar a entrada do usuário
         self.input = Input()
 
     # Método a ser implementado pelas subclasses

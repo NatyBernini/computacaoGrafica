@@ -1,5 +1,6 @@
 import pygame
 
+
 class Input(object):
     def __init__(self):
         # Indica se o usuário encerrou a aplicação
